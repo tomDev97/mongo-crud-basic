@@ -19,5 +19,5 @@ newCourse.save()
     .catch((err) => console.log(err))
 
 
-    // mongoimport --db courses --collection courses --file data.json --jsonArray 
+// mongoimport --db courses --collection courses --file data.json --jsonArray 
     
