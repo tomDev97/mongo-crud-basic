@@ -2,7 +2,6 @@ const mongoose = require('mongoose');
 
 //INIT SCHEMA COURSE
 const CourseSchema = new mongoose.Schema({
-    _id : String,
     name : String,
     author: String,
     tags : [String],

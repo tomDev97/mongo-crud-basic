@@ -79,3 +79,33 @@ mongoose.connect('mongodb://localhost:27017/courses', { useNewUrlParser: true })
 //     .select('name author price')
 //     .then(console.log)
 //     .catch(console.log)
+
+/**
+ * ----------------------------------------SKIP + LIMIT  ------------------------------------------------
+ */
+
+// const pageNumber = 2;
+// const pageSize = 3;
+// Course.find()
+//     .skip((pageNumber - 1) * pageSize)
+//     .limit(pageSize)
+//     .then(console.log)
+//     .catch(console.log)
+
+
+/**
+ * ----------------------------------------findOne && findById  ------------------------------------------------
+ */
+
+// Course.findById('5d0fe84d2b2c7b5d76949cd2') //_id of collection
+//     .select('name author price')
+//     .then(console.log)
+//     .catch(console.log)
+
+
+//find one  name has 'js' && 15 < price < 20
+
+// Course.findOne({ name : /.*js.*/i, price : {$gte : 15, $lte : 20}})
+//     .select('name author price')
+//     .then(console.log)
+//     .catch(console.log)
